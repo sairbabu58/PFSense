@@ -6,7 +6,8 @@
 https://pfsense.com/download/
 
 > Upload ISO to Proxmox
-> 2 network port is required/attach to the VM
+> 2 network port is required/attached to the VM pfsense
+> 2 network needs to available on PVE
 ```
 
 ```
@@ -21,8 +22,25 @@ https://pfsense.com/download/
 > Network: Bridge [vmbr0] default
 > Finished
 ```
+
+
 ```
 > Dont start the VM
 > Add additional network interface
+```
 
+
+
+```
+> select the vm pfsense
+> Hardware
+> network
+> add network
+> bridge : [vmbr1]
+```
+
+```
+> select the vm pfsense
+> option
+> start at boot [checked]
 ```
