@@ -1,5 +1,6 @@
 # PFSense Installation
 
+## preparation
 ```
 > Download ISO
 
@@ -10,6 +11,7 @@ https://pfsense.com/download/
 > 2 network needs to available on PVE
 ```
 
+## PFSense VM Creation
 ```
 > Create the VM over Proxmox
 > VM name and other details
@@ -23,7 +25,7 @@ https://pfsense.com/download/
 > Finished
 ```
 
-
+## Additional Network setup
 ```
 > Dont start the VM
 > Add additional network interface
@@ -38,9 +40,16 @@ https://pfsense.com/download/
 > add network
 > bridge : [vmbr1]
 ```
+## Start vm at pve boot
 
 ```
 > select the vm pfsense
 > option
 > start at boot [checked]
+> start the vm
+```
+
+## PFSense Installation
+```
+
 ```
